@@ -1,0 +1,15 @@
+<view class='dialog-box' wx:if='{{isShow}}'>
+  <view class='dialog-mask'></view>
+  <view class='dialog-container'>
+    <view class='dialog-title border-b'>{{title}}</view>
+    <view class='dialog-content'>
+      <view class='dialog-tips' style='{{contentStyle}}'>
+        <text decode="{{true}}">{{content}}</text>
+      </view>
+    </view>
+    <view class='modal-foot'>
+      <view class='modal-foot-btn bg-primary' style='{{cancelStyle}}' bindtap='_cancelEvent'>{{cancelText}}</view>
+      <view class='modal-foot-btn bg-primary' style='{{okStyle}}' bindtap='_okEvent' data-type='1' data-server='paixiaole'>{{okText}}</view>
+    </view>
+  </view>
+</view>

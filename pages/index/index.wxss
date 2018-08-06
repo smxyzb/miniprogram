@@ -1,0 +1,14 @@
+/**index.wxss**/
+
+.btn-box {
+  padding: 20rpx;
+}
+
+.btn {
+  background: #ee272b;
+  color: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}

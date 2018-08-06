@@ -1,0 +1,5 @@
+<view class='btn-box'>
+  <view class='btn bg-primary' bindtap="openDialog">dialog</view>
+</view>
+
+<dialog id="dialog" bind:cancelEvent="cancelEvent" bind:okEvent="okEvent"></dialog>

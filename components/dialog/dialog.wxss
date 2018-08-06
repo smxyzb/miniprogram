@@ -1,0 +1,116 @@
+.bg-primary {
+  background: #ee272b;
+}
+/*登录弹框*/
+
+.dialog-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.dialog-box {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  display: -webkit-box-flex;
+  align-items: center;
+  animation: showdialog linear;
+}
+
+@keyframes showdialog {
+  from {
+    opacity: 0, ;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog-container {
+  position: relative;
+  width: 550rpx;
+  min-height: 340rpx;
+  max-height: 750rpx;
+  margin: 0 100rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.dialog-content {
+  min-height: 250rpx;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.dialog-btn {
+  width: 250rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #ee272b;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  border: 1px solid #ee272b;
+}
+
+.dialog-tips {
+  padding: 20rpx 40rpx;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  letter-spacing: 0px;
+  color: #666;
+}
+
+.close-box {
+  position: absolute;
+  bottom: -80rpx;
+}
+
+.dialog-title {
+  width: 100%;
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 90rpx;
+  text-align: center;
+}
+
+.modal-foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+}
+
+.modal-foot .modal-foot-btn {
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  font-size: 34rpx;
+}
+
+.modal-foot .modal-foot-btn.text-default {
+  color: #666;
+}
+
+.modal-foot .modal-foot-btn.text-white {
+  color: #fff;
+}
+
+.modal-foot .modal-foot-btn.text-primary {
+  background: #ee272b;
+  color: #fff;
+  border-radius: 0;
+}
